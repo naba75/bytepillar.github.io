@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>BytePillar — We Engineer What's Next</title>
-<meta name="description" content="BytePillar builds precision software that scales. From concept to deployment, we craft digital products that move industries forward.">
+<meta name="description" content="BytePillar — Custom software development by a senior engineer with 17+ years at Fortune 500 companies. Full-stack web apps, APIs, cloud deployment. Free prototype, zero upfront payment.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
@@ -495,6 +495,111 @@
     transform: translateY(0);
   }
 
+  /* ── Founder Section ── */
+  .founder-section { padding: 100px 0; }
+  .founder-layout {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 56px;
+    align-items: start;
+  }
+  .founder-career {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-top: 28px;
+  }
+  .career-item {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    padding: 12px 16px;
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: 10px;
+    transition: border-color 0.3s;
+  }
+  .career-item:hover { border-color: rgba(88, 230, 160, 0.2); }
+  .career-company {
+    font-weight: 600;
+    font-size: 0.9rem;
+    color: var(--accent);
+    min-width: 90px;
+    flex-shrink: 0;
+  }
+  .career-role {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+  }
+  .transparency-card {
+    background: linear-gradient(135deg, var(--surface), var(--surface-2));
+    border: 1px solid var(--border);
+    border-radius: 20px;
+    padding: 40px 36px;
+  }
+  .transparency-card h3 {
+    font-family: var(--font-body);
+    font-weight: 600;
+    font-size: 1.1rem;
+    margin-bottom: 16px;
+    color: var(--text);
+  }
+  .transparency-card p {
+    color: var(--text-dim);
+    font-size: 0.92rem;
+    line-height: 1.75;
+  }
+  .transparency-promise {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-top: 16px;
+    font-size: 0.9rem;
+    color: var(--text);
+    font-weight: 400;
+  }
+
+  /* ── Tech Stack ── */
+  .tech-stack {
+    background: var(--surface);
+    padding: 100px 0;
+  }
+  .stack-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 32px;
+    margin-top: 48px;
+  }
+  .stack-group h4 {
+    font-family: var(--font-body);
+    font-weight: 500;
+    font-size: 0.85rem;
+    color: var(--accent);
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+    margin-bottom: 12px;
+  }
+  .stack-tags {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .stack-tag {
+    display: inline-block;
+    padding: 6px 14px;
+    background: var(--surface-2);
+    border: 1px solid var(--border);
+    border-radius: 8px;
+    font-size: 0.82rem;
+    color: var(--text);
+    font-weight: 400;
+    transition: border-color 0.3s, background 0.3s;
+  }
+  .stack-tag:hover {
+    border-color: rgba(88, 230, 160, 0.25);
+    background: var(--accent-dark);
+  }
+
   /* ── Responsive ── */
   @media (max-width: 768px) {
     section { padding: 72px 0; }
@@ -502,6 +607,11 @@
       grid-template-columns: 1fr;
       gap: 40px;
     }
+    .founder-layout {
+      grid-template-columns: 1fr;
+      gap: 32px;
+    }
+    .tech-stack { padding: 72px 0; }
     .cta-email {
       flex-direction: column;
       padding: 20px;
@@ -541,74 +651,168 @@
 <!-- Hero -->
 <section class="hero">
   <div class="container hero-content">
-    <p class="hero-tag">Software Development Studio</p>
-    <h1>We build software that <em>moves</em> your business forward</h1>
-    <p class="hero-sub">We're a new studio built by senior engineers who left the big companies to do things right. Your project won't be handed off to juniors — you work directly with the people who write the code.</p>
+    <p class="hero-tag">17+ Years &middot; NIT Graduate &middot; Fortune 500 Product Companies</p>
+    <h1>Enterprise-grade software, built by <em>one senior engineer</em> — not an agency</h1>
+    <p class="hero-sub">Founded by a Principal Engineer with 17+ years building production systems at global Fortune 500 product companies. Your project won't be handed to juniors or outsourced. You talk directly to the person who writes the code. No middlemen.</p>
     <div class="hero-actions">
-      <a href="mailto:info@vortezasystems.com?subject=Project%20Inquiry%20-%20BytePillar" class="btn btn-primary">Start a Project</a>
-      <a href="#services" class="btn btn-ghost">Explore Services</a>
+      <a href="mailto:info@bytepillar.in?subject=Project%20Inquiry%20-%20BytePillar" class="btn btn-primary">Start a Project</a>
+      <a href="#founder" class="btn btn-ghost">See My Background</a>
     </div>
   </div>
 </section>
 
-<!-- Why Us - First Project Promise -->
+<!-- Trust Signals -->
 <div class="stats reveal">
   <div class="container">
+    <div>
+      <span class="stat-num">17+</span>
+      <p class="stat-label">Years in Production Software</p>
+    </div>
+    <div>
+      <span class="stat-num">NIT</span>
+      <p class="stat-label">B.E. Computer Science</p>
+    </div>
     <div>
       <span class="stat-num">0%</span>
       <p class="stat-label">Upfront Payment</p>
     </div>
     <div>
       <span class="stat-num">7 Days</span>
-      <p class="stat-label">Free Prototype Delivery</p>
-    </div>
-    <div>
-      <span class="stat-num">24/7</span>
-      <p class="stat-label">Direct Founder Access</p>
-    </div>
-    <div>
-      <span class="stat-num">100%</span>
-      <p class="stat-label">Code Ownership Is Yours</p>
+      <p class="stat-label">Free Working Prototype</p>
     </div>
   </div>
 </div>
 
+<!-- Founder -->
+<section id="founder" class="founder-section reveal">
+  <div class="container">
+    <div class="founder-layout">
+      <div class="founder-info">
+        <p class="section-tag">Who's Behind BytePillar</p>
+        <h2 class="section-title">One engineer. Full accountability.</h2>
+        <p class="section-desc" style="margin-bottom:28px;">BytePillar is not a faceless agency. It's run by a single senior engineer who handles every project personally — architecture, code, deployment, and communication. When something breaks at 2 AM, my phone rings — not an intern's.</p>
+        <div class="founder-career">
+          <div class="career-item">
+            <span class="career-company">Current</span>
+            <span class="career-role">Full-Stack Developer at a Fortune 500 Enterprise Software Company</span>
+          </div>
+          <div class="career-item">
+            <span class="career-company">Previous</span>
+            <span class="career-role">Principal Member of Technical Staff — Global Database &amp; Cloud Company</span>
+          </div>
+          <div class="career-item">
+            <span class="career-company">Earlier</span>
+            <span class="career-role">Developer roles at global IT &amp; retail enterprises (3 companies, 7+ years)</span>
+          </div>
+        </div>
+        <p style="color:var(--text-dim);font-size:0.88rem;margin-top:24px;line-height:1.7;">B.E. Computer Science — NIT (National Institute of Technology) &middot; AWS Certified &middot; Oracle Cloud Certified</p>
+        <p style="color:var(--text-dim);font-size:0.82rem;margin-top:8px;line-height:1.7;font-style:italic;">Full career details and LinkedIn profile shared during our first conversation.</p>
+      </div>
+      <div class="founder-transparency">
+        <div class="transparency-card">
+          <h3>A note about how we operate</h3>
+          <p>BytePillar is an MSME-registered firm. I handle all technical delivery — architecture, development, code reviews, and client communication. The business operations and administration are managed separately, which lets me focus entirely on building great software for you.</p>
+          <p style="margin-top:16px;">This structure is common in Indian IT consultancies and lets me offer competitive pricing while maintaining enterprise-quality delivery. Every technical decision, every line of code, every deployment — that's me.</p>
+          <div class="transparency-promise">
+            <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>You'll always deal directly with the founder-engineer</span>
+          </div>
+          <div class="transparency-promise">
+            <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>100% code ownership transferred to you</span>
+          </div>
+          <div class="transparency-promise">
+            <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+            <span>Full identity &amp; LinkedIn shared on first call</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Tech Stack -->
+<section class="tech-stack reveal">
+  <div class="container">
+    <p class="section-tag">Tech Stack</p>
+    <h2 class="section-title">The tools I use in production — not just on a resume</h2>
+    <p class="section-desc">Every technology listed here is something I've shipped real code with.</p>
+    <div class="stack-grid">
+      <div class="stack-group">
+        <h4>Frontend</h4>
+        <div class="stack-tags">
+          <span class="stack-tag">React JS</span>
+          <span class="stack-tag">HTML / CSS</span>
+          <span class="stack-tag">JavaScript</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Backend</h4>
+        <div class="stack-tags">
+          <span class="stack-tag">Node.js</span>
+          <span class="stack-tag">Java</span>
+          <span class="stack-tag">Spring Boot</span>
+          <span class="stack-tag">Python</span>
+          <span class="stack-tag">REST APIs</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Databases</h4>
+        <div class="stack-tags">
+          <span class="stack-tag">MongoDB</span>
+          <span class="stack-tag">MySQL</span>
+          <span class="stack-tag">Oracle DB</span>
+        </div>
+      </div>
+      <div class="stack-group">
+        <h4>Cloud &amp; DevOps</h4>
+        <div class="stack-tags">
+          <span class="stack-tag">AWS</span>
+          <span class="stack-tag">Docker</span>
+          <span class="stack-tag">Kubernetes</span>
+          <span class="stack-tag">CI/CD</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 <!-- Services -->
 <section id="services" class="reveal">
   <div class="container">
-    <p class="section-tag">What We Do</p>
-    <h2 class="section-title">End-to-end software solutions, built for scale</h2>
-    <p class="section-desc">We don't just write code — we engineer competitive advantages.</p>
+    <p class="section-tag">What I Build</p>
+    <h2 class="section-title">Full-stack applications, end to end</h2>
+    <p class="section-desc">I don't subcontract. If I take your project, I build it — from database schema to the deploy button.</p>
     <div class="services-grid">
       <div class="service-card">
         <div class="service-icon">&#9775;</div>
-        <h3>Web Applications</h3>
-        <p>High-performance web platforms built with modern frameworks. Fast, responsive, and designed to handle millions of users without breaking a sweat.</p>
-      </div>
-      <div class="service-card">
-        <div class="service-icon">&#9741;</div>
-        <h3>Mobile Development</h3>
-        <p>Native and cross-platform mobile apps that feel buttery smooth. iOS, Android, or both — we ship experiences users love to open.</p>
+        <h3>Custom Web Applications</h3>
+        <p>React frontends with Node.js or Spring Boot backends. Dashboards, portals, internal tools, customer-facing platforms — built to handle real-world load.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">&#9881;</div>
-        <h3>API & Backend Systems</h3>
-        <p>Robust APIs and microservice architectures that form the backbone of your product. Secure, documented, and built to evolve with your needs.</p>
+        <h3>APIs &amp; Backend Systems</h3>
+        <p>RESTful APIs, microservices, and data pipelines that connect your systems. Properly documented, secured, and built to evolve with your business.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">&#9672;</div>
-        <h3>Cloud & DevOps</h3>
-        <p>Infrastructure that scales on autopilot. CI/CD pipelines, containerized deployments, and monitoring — so you sleep well at night.</p>
+        <h3>Cloud Deployment &amp; DevOps</h3>
+        <p>AWS infrastructure, Docker containers, Kubernetes orchestration, and CI/CD pipelines. Your app doesn't just work — it stays working.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">&#10022;</div>
-        <h3>AI & Automation</h3>
-        <p>Integrate intelligent features into your product — from recommendation engines to natural language processing. Make your software smarter.</p>
+        <h3>AI-Powered Features</h3>
+        <p>Integrate intelligent capabilities into your product — smart search, content generation, automated workflows. I use AI tools daily and know what actually works vs. what's hype.</p>
+      </div>
+      <div class="service-card">
+        <div class="service-icon">&#9741;</div>
+        <h3>Enterprise Integrations</h3>
+        <p>17 years in enterprise software means I understand how big systems work. Need your new app to talk to existing enterprise infrastructure? That's where I come from.</p>
       </div>
       <div class="service-card">
         <div class="service-icon">&#9826;</div>
-        <h3>UI/UX Design</h3>
-        <p>Interfaces that feel invisible. We design user experiences grounded in research, refined through testing, and polished to pixel perfection.</p>
+        <h3>Ongoing Maintenance &amp; Retainers</h3>
+        <p>Monthly retainer for bug fixes, feature additions, performance monitoring, and keeping your stack updated. Like having a senior developer on call, without the full-time salary.</p>
       </div>
     </div>
   </div>
@@ -617,61 +821,68 @@
 <!-- Process -->
 <section class="process reveal">
   <div class="container">
-    <p class="section-tag">Our Process</p>
-    <h2 class="section-title">From idea to production in four phases</h2>
-    <p class="section-desc">Every great product follows a disciplined path. Here's ours.</p>
+    <p class="section-tag">How It Works</p>
+    <h2 class="section-title">From your idea to a working product</h2>
+    <p class="section-desc">No surprises. Here's exactly what happens when you reach out.</p>
     <div class="process-steps">
       <div class="step">
         <div class="step-num"></div>
-        <h3>Discovery</h3>
-        <p>We listen deeply. Understand your goals, users, constraints, and the market landscape before writing a single line of code.</p>
+        <h3>Free Consultation</h3>
+        <p>You tell me your problem. I'll be honest about whether I can solve it, what it'll cost, and how long it'll take. No sales pitch — just a straight conversation.</p>
       </div>
       <div class="step">
         <div class="step-num"></div>
-        <h3>Architecture</h3>
-        <p>Blueprint the technical foundation. We choose the right stack, design the data model, and map every integration point.</p>
+        <h3>Free Prototype (7 Days)</h3>
+        <p>Before you spend a rupee, I build a working prototype. You see real code, real functionality. If you don't like it, walk away — the prototype is yours to keep.</p>
       </div>
       <div class="step">
         <div class="step-num"></div>
-        <h3>Build & Iterate</h3>
-        <p>Agile sprints with weekly demos. You see progress in real time and provide feedback that shapes the product as it grows.</p>
+        <h3>Build &amp; Iterate</h3>
+        <p>Weekly demos, weekly feedback. You see exactly what I'm building and shape it as we go. No disappearing for months and dropping a surprise at the end.</p>
       </div>
       <div class="step">
         <div class="step-num"></div>
-        <h3>Launch & Scale</h3>
-        <p>Rigorous QA, performance tuning, and deployment. Then we stick around to monitor, optimize, and help you grow.</p>
+        <h3>Deploy &amp; Support</h3>
+        <p>I deploy to production, hand over all code and credentials, and offer ongoing support. You own everything. I stick around only if you want me to.</p>
       </div>
     </div>
   </div>
 </section>
 
-<!-- Why Us -->
+<!-- Why Me -->
 <section class="why-section reveal">
   <div class="container">
     <div>
-      <p class="section-tag">Why BytePillar</p>
-      <h2 class="section-title">New studio. Senior talent. Zero ego.</h2>
-      <p class="section-desc">We don't have a legacy — and that's our advantage. Every decision we make is for you, not for our quarterly reports.</p>
+      <p class="section-tag">Why Work With Me</p>
+      <h2 class="section-title">What you get that agencies can't offer</h2>
+      <p class="section-desc">I'm not cheaper than Upwork freelancers. I'm not bigger than TCS. But here's what I am:</p>
       <ul class="why-list">
         <li>
           <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div>
-            <h4>You Talk to the Engineers</h4>
-            <p>No account managers, no middlemen. The people building your product are the people on your calls.</p>
+            <h4>Senior Engineer, Not a Reseller</h4>
+            <p>Most agencies sell your project to juniors. BytePillar's founder is a Principal-level engineer with 17 years of hands-on coding at Fortune 500 companies. The person you talk to is the person who writes your code.</p>
           </div>
         </li>
         <li>
           <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div>
-            <h4>Earn Your Trust First</h4>
-            <p>We deliver a working prototype before asking for a single rupee. Our work speaks before our invoices do.</p>
+            <h4>Verifiable Track Record</h4>
+            <p>17+ years across 6 companies — from global IT giants to enterprise software leaders. Full identity, LinkedIn, and work history shared on the very first call. Nothing to hide, everything to prove.</p>
           </div>
         </li>
         <li>
           <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
           <div>
-            <h4>Hungry to Prove Ourselves</h4>
-            <p>Big agencies treat you like a ticket number. We treat your project like our reputation depends on it — because it does.</p>
+            <h4>Risk-Free Start</h4>
+            <p>I deliver a working prototype for free within 7 days. No upfront payment. If you're not convinced, you keep the prototype and walk away. I take the risk, not you.</p>
+          </div>
+        </li>
+        <li>
+          <span class="why-check"><svg viewBox="0 0 12 12" fill="none"><path d="M2 6l3 3 5-5" stroke="#58e6a0" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></span>
+          <div>
+            <h4>I Say No When I Should</h4>
+            <p>If your project isn't something I can deliver well, I'll tell you upfront. I'd rather lose a deal than deliver bad work. My reputation is all I have.</p>
           </div>
         </li>
       </ul>
@@ -679,8 +890,8 @@
     <div class="quote-card">
       <span class="quote-mark">&#10038;</span>
       <blockquote style="font-size:1.3rem;font-weight:400;line-height:1.6;margin-bottom:16px;">Your First Project Is Risk-Free</blockquote>
-      <p style="color:var(--text-dim);font-size:0.95rem;line-height:1.8;">We know trust is earned, not claimed. That's why your first project comes with a free working prototype within 7 days — no payment, no commitment. If you love what you see, we move forward together. If not, the prototype is yours to keep. No strings attached.</p>
-      <a href="mailto:info@vortezasystems.com?subject=Free%20Prototype%20Request%20-%20BytePillar" class="btn btn-primary" style="margin-top:24px;">Claim Your Free Prototype</a>
+      <p style="color:var(--text-dim);font-size:0.95rem;line-height:1.8;">I know BytePillar is a new name. That's exactly why I put my money where my mouth is: your first project starts with a free working prototype — no payment, no contract, no commitment. You see real code running before you decide anything. If it's not what you expected, you keep the prototype and owe me nothing.</p>
+      <a href="mailto:info@bytepillar.in?subject=Free%20Prototype%20Request%20-%20BytePillar" class="btn btn-primary" style="margin-top:24px;">Claim Your Free Prototype</a>
     </div>
   </div>
 </section>
@@ -688,18 +899,18 @@
 <!-- CTA -->
 <section id="contact" class="cta-section reveal">
   <div class="container">
-    <p class="section-tag">Ready to Build?</p>
-    <h2 class="section-title">Be one of our first clients — and get treated like our only one</h2>
-    <p class="section-desc">Tell us your idea. We'll respond within 24 hours with honest feedback and a clear plan — not a sales pitch. First prototype is on us.</p>
+    <p class="section-tag">Let's Talk</p>
+    <h2 class="section-title">Tell me your problem. I'll tell you honestly if I can solve it.</h2>
+    <p class="section-desc">No pitch decks, no sales calls. Just a straightforward conversation between you and the person who'll actually build your software. Response within 24 hours.</p>
     <div class="cta-email">
-      <span>info@vortezasystems.com</span>
-      <a href="mailto:info@vortezasystems.com?subject=Project%20Inquiry%20-%20BytePillar" class="btn btn-primary">Send Email</a>
+      <span>info@bytepillar.in</span>
+      <a href="mailto:info@bytepillar.in?subject=Project%20Inquiry%20-%20BytePillar" class="btn btn-primary">Send Email</a>
     </div>
     <div class="cta-email" style="margin-top: 12px;">
       <span style="display:inline-flex;align-items:center;gap:8px;"><svg width="18" height="18" viewBox="0 0 24 24" fill="#25D366"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg> +91 6900320930</span>
-      <a href="https://wa.me/916900320930?text=Hi%20BytePillar%2C%20I%27m%20interested%20in%20your%20software%20development%20services." class="btn btn-primary" style="background:#25D366;" onmouseover="this.style.background='#20bd5a'" onmouseout="this.style.background='#25D366'">WhatsApp Us</a>
+      <a href="https://wa.me/916900320930?text=Hi%2C%20I%20found%20BytePillar%20online.%20I%27d%20like%20to%20discuss%20a%20project." class="btn btn-primary" style="background:#25D366;" onmouseover="this.style.background='#20bd5a'" onmouseout="this.style.background='#25D366'">WhatsApp Me</a>
     </div>
-    <p class="cta-note">No spam. No sales bots. Just a real conversation about your project.</p>
+    <p class="cta-note">No spam. No bots. You're talking directly to the founder.</p>
   </div>
 </section>
 
